@@ -5,16 +5,12 @@ import ComicsOverview from './components/ComicsOverview.vue';
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-
+    <div class="my-4 text-center">
+      <h1 class="mb-4 text-6x1 font-extrabold uppercase">Marvel Explorer 🔭</h1>
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to='/' class="px-4 py-2 border-2 rounded-s-md hover:text-slate-600">📒 Comics</RouterLink>
+        <RouterLink to="/search" class="px-4 py-2 border-2 border-s-0 hover:text-slate-600 rounded-e-md">🦹 Heroes</RouterLink>
       </nav>
-
-      <ComicsOverview />
     </div>
   </header>
 
